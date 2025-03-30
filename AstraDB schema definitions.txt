@@ -1,0 +1,12 @@
+key frozen<tuple<tinyint, text>> PRIMARY KEY,
+    array_contains set<text>,
+    array_size map<text, int>,
+    doc_json text,
+    exist_keys set<text>,
+    query_bool_values map<text, tinyint>,
+    query_dbl_values map<text, decimal>,
+    query_null_values set<text>,
+    query_text_values map<text, text>,
+    query_timestamp_values map<text, timestamp>,
+    query_vector_value vector<float, 1536>,
+    tx_id timeuuid
